@@ -233,7 +233,7 @@ body {
 
 /* codigo css para configuração da navegação por tabs */
 
-.js-tabcontent section {
+.js .js-tabcontent section {
   display: none;
 }
 
