@@ -253,3 +253,35 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* codigo css para configuração da navegação do faq */
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: "⮧";
+  margin-left: 6px;
+}
+
+.js-accordion dt.ativo::after {
+  content: "⮥";
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown 0.8s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate3d(-30, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
