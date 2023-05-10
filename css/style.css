@@ -264,6 +264,10 @@ html {
   display: none;
 }
 
+.js-accordion {
+  cursor: pointer;
+}
+
 .js-accordion dt::after {
   content: "⮧";
   margin-left: 6px;
@@ -288,4 +292,17 @@ html {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* configuração do scroll geral */
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.4s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
